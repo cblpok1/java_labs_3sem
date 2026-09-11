@@ -21,8 +21,27 @@ public class Task3 {
         if(q%2==0) return q;
         else return 0;
     }
+
+    public static void task(){
+        read(5);
+        int k = 0,c = 0,q=0;
+        for(int i = 0;i<numbers.size();i++){
+            k = 0;
+            q = 0;
+            if(count(numbers.get(i))!=0){
+                c = numbers.get(i);
+                while(c>0){
+                    k+=c%10*Math.pow(10,q);
+                    q+=1;
+                    c/=10;
+                }
+                numbers.set(i,k);
+            }
+        }
+        System.out.println(numbers);
+    }
     
     public static void main(String[] args) {
-
+        task();
     }
 }
