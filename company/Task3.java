@@ -14,7 +14,7 @@ public class Task3 {
     }
     public static int count(int n){
         int q = 0, k = n;
-        while(n>0){
+        while(k>0){
             q+=k%10;
             k/=10;
         }
@@ -23,16 +23,14 @@ public class Task3 {
     }
 
     public static void task(){
-        read(6);
-        int k = 0,c = 0,q=0;
+        read(5);
+        int k = 0,c = 0;
         for(int i = 0;i<numbers.size();i++){
             k = 0;
-            q = 0;
             if(count(numbers.get(i))!=0){
                 c = numbers.get(i);
                 while(c>0){
-                    k+=c%10*Math.pow(10,q);
-                    q+=1;
+                    k=k*10+c%10;
                     c/=10;
                 }
                 numbers.set(i,k);
