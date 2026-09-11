@@ -23,7 +23,7 @@ public class Task3 {
     }
 
     public static void task(){
-        read(5);
+        read(6);
         int k = 0,c = 0,q=0;
         for(int i = 0;i<numbers.size();i++){
             k = 0;
