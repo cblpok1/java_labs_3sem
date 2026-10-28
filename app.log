@@ -1,0 +1,27 @@
+2026-10-28 10:55:47 FATAL io.FileReaderService - Couldn't read file: data.txt
+java.io.FileNotFoundException: data.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at io.FileReaderService.readTaxPayers(FileReaderService.java:21) [classes/:?]
+	at org.example.Main.main(Main.java:11) [classes/:?]
+2026-10-28 10:57:11 INFO  io.FileReaderService - Successfull adding: Иванов
+2026-10-28 10:57:11 INFO  io.FileReaderService - Successfull adding: Петров
+2026-10-28 10:57:11 INFO  io.FileReaderService - Successfull adding: Сидоров
+2026-10-28 10:59:23 INFO  io.FileReaderService - Successfull adding: Belov
+2026-10-28 10:59:23 INFO  io.FileReaderService - Successfull adding: Zvankovich
+2026-10-28 10:59:23 INFO  io.FileReaderService - Successfull adding: Schepov
+2026-10-28 22:05:40 WARN  io.FileReaderService - Uncorrect row (not enough money): standard;Belov;50000;10000;0.13
+2026-10-28 22:05:40 WARN  io.FileReaderService - Uncorrect row (not enough money): beneficiary;Zvankovich;20000;0;500
+2026-10-28 22:05:40 WARN  io.FileReaderService - Uncorrect row (not enough money): standard;Schepov;80000;0;0.15
+2026-10-28 22:06:30 INFO  io.FileReaderService - Successfull adding: Belov
+2026-10-28 22:06:30 INFO  io.FileReaderService - Successfull adding: Zvankovich
+2026-10-28 22:06:30 INFO  io.FileReaderService - Successfull adding: Schepov
+2026-10-28 22:08:49 INFO  io.FileReaderService - Successfull adding: Belov
+2026-10-28 22:08:49 INFO  io.FileReaderService - Successfull adding: Zvankovich
+2026-10-28 22:08:49 INFO  io.FileReaderService - Successfull adding: Schepov
+2026-10-28 22:09:24 INFO  io.FileReaderService - Successfull adding: Belov
+2026-10-28 22:09:24 INFO  io.FileReaderService - Successfull adding: Zvankovich
+2026-10-28 22:09:24 INFO  io.FileReaderService - Successfull adding: Schepov
